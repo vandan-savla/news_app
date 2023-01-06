@@ -34,7 +34,7 @@ export class News extends Component {
          {
             this.state.items.map((item)=>{
                 return(
-                <NewsItem title={item.title} desc = {item.description}></NewsItem>
+                <NewsItem title={item.title} desc = {item.description} img={item.urlToImage} link={item.url}></NewsItem>
                 )
             })
          }
